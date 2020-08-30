@@ -23,27 +23,15 @@ should just report an error.
 ## Usage
 
 ### Compile the source code
-The following libraries are needed (including the -dev/-devel packages):
+The following libraries are required when installing on SIFT (the other libraries from the master are already installed on SIFT):
 
-* FUSE 2.6 or greater (on 32-bit systems, FUSE 3.0 or greater)
-* zlib
-* bzip2
-* libattr (on some Linux distributions)
-
-Development tools:
-* cmake
-* gcc-c++ (or clang++)
-* git (for cloning)
-
-Example for Linux:
 ```
-sudo apt install fuse libfuse3-dev bzip2 libbz2-dev cmake gcc-c++ git libattr1-dev zlib1g-dev
+sudo apt install libbz2-dev cmake libattr1-dev
 ```
-Of course these commands depend on the Linux distribution.
 
 Clone the repository:
 ```
-git clone https://github.com/sgan81/apfs-fuse.git
+git clone https://github.com/ezaspy/apfs-fuse.git
 cd apfs-fuse
 git submodule init
 git submodule update
@@ -55,13 +43,11 @@ Compile the driver:
 mkdir build
 cd build
 cmake ..
-ccmake . # Only if you want to change build options
+ccmake . # change the option `USE_FUSE3` to `OFF`
 make
 ```
 
-Note that the driver uses FUSE 3.0 by default (required on 32-bit systems). If
-you want do compile using FUSE 2.6, use `ccmake .` to change the option
-`USE_FUSE3` to `OFF`.
+## Additional Options (not required when using elrond)
 
 ### Mount a drive
 ```
