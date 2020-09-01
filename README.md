@@ -26,7 +26,7 @@ should just report an error.
 The following libraries are required when installing on SIFT (the other libraries from the master are already installed on SIFT):
 
 ```
-sudo apt install libbz2-dev cmake libattr1-dev
+sudo apt install libbz2-dev libattr1-dev cmake cmake-curses-gui
 ```
 
 Clone the repository:
