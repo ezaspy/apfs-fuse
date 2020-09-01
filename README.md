@@ -31,6 +31,7 @@ sudo apt install libbz2-dev libattr1-dev cmake cmake-curses-gui
 
 Clone the repository:
 ```
+cd /usr/local/bin
 git clone https://github.com/ezaspy/apfs-fuse.git
 cd apfs-fuse
 git submodule init
