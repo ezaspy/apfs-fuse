@@ -31,6 +31,7 @@ sudo apt install libbz2-dev libattr1-dev cmake cmake-curses-gui && cd /usr/local
 sudo make
 ```
 
+
 #### Long Version
 ```
 sudo apt install libbz2-dev libattr1-dev cmake cmake-curses-gui
