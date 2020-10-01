@@ -22,7 +22,6 @@ should just report an error.
 
 ## Usage
 
-<br><br>
 ### Compile the source code
 The following libraries are required when installing on SIFT (the other libraries from the master are already installed on SIFT):
 <br>
@@ -57,7 +56,8 @@ cmake ..
 ccmake . # change the option `USE_FUSE3` to `OFF`
 make
 ```
-<br>
+<br><br>
+
 ## Additional Options (not required when using elrond)
 
 ### Mount a drive
