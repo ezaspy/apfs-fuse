@@ -22,15 +22,17 @@ should just report an error.
 
 ## Usage
 
+<br><br>
 ### Compile the source code
 The following libraries are required when installing on SIFT (the other libraries from the master are already installed on SIFT):
+<br>
 
 #### Condensed Version
 ```
 sudo apt install libbz2-dev libattr1-dev cmake cmake-curses-gui && cd /usr/local/bin && sudo git clone https://github.com/ezaspy/apfs-fuse.git && cd apfs-fuse && sudo git submodule init && sudo git submodule update && sudo mkdir build && cd build && sudo cmake .. && sudo ccmake .
 sudo make
 ```
-<br><br>
+<br>
 
 #### Long Version
 ```
@@ -55,7 +57,7 @@ cmake ..
 ccmake . # change the option `USE_FUSE3` to `OFF`
 make
 ```
-
+<br>
 ## Additional Options (not required when using elrond)
 
 ### Mount a drive
