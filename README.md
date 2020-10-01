@@ -30,7 +30,7 @@ The following libraries are required when installing on SIFT (the other librarie
 sudo apt install libbz2-dev libattr1-dev cmake cmake-curses-gui && cd /usr/local/bin && sudo git clone https://github.com/ezaspy/apfs-fuse.git && cd apfs-fuse && sudo git submodule init && sudo git submodule update && sudo mkdir build && cd build && sudo cmake .. && sudo ccmake .
 sudo make
 ```
-
+<br><br>
 
 #### Long Version
 ```
